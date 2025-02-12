@@ -129,8 +129,6 @@ app.get('/', (req, res) =>{
     res.send('Coffee Making server is running')
 })
 
-// app.listen(port, () =>{
-//     console.log(`Coffee server is running on port: ${port}`)
-// })
-
-module.exports = app; 
+app.listen(port, () =>{
+    console.log(`Coffee server is running on port: ${port}`)
+})
